@@ -6,6 +6,7 @@
     <title>Nova Estates | Luxury Real Estate in Nigeria</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
@@ -82,11 +83,14 @@
     <input type="text" id="searchInput" placeholder="Search by location...">
 
     <select id="propertyType">
-        <option value="all">Property Type</option>
-        <option value="Villa">Villa</option>
-        <option value="Apartment">Apartment</option>
-        <option value="Family Home">Family Home</option>
-    </select>
+    <option value="all">Property Type</option>
+    <option value="Villa">Villa</option>
+    <option value="Apartment">Apartment</option>
+    <option value="Family Home">Family Home</option>
+    <option value="Penthouse">Penthouse</option>
+    <option value="Duplex">Duplex</option>
+    <option value="Beach Villa">Beach Villa</option>
+</select>
 
     <button id="searchBtn">Search</button>
 
@@ -140,6 +144,56 @@
             <a href="#" class="view-btn">View Property</a>
         </div>
     </div>
+    <div class="property-card" data-type="Penthouse">
+    <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80" alt="Luxury Penthouse">
+
+    <div class="featured-badge">Just Listed</div>
+    <div class="favorite-btn">♡</div>
+
+    <div class="property-content">
+        <h3>Luxury Penthouse</h3>
+        <p>📍 Eko Atlantic, Lagos</p>
+        <div class="property-info">
+            🛏️ 4 Bedrooms • 🛁 5 Bathrooms • 📐 700 sqm
+        </div>
+        <span class="price">₦980M</span>
+        <a href="#" class="view-btn">View Property</a>
+    </div>
+</div>
+
+<div class="property-card" data-type="Duplex">
+    <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80" alt="Luxury Duplex">
+
+    <div class="featured-badge">New</div>
+    <div class="favorite-btn">♡</div>
+
+    <div class="property-content">
+        <h3>Luxury Duplex</h3>
+        <p>📍 Banana Island, Lagos</p>
+        <div class="property-info">
+            🛏️ 6 Bedrooms • 🛁 6 Bathrooms • 📐 850 sqm
+        </div>
+        <span class="price">₦1.2B</span>
+        <a href="#" class="view-btn">View Property</a>
+    </div>
+</div>
+
+<div class="property-card" data-type="Beach Villa">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Beach Villa">
+
+    <div class="featured-badge">Hot Deal</div>
+    <div class="favorite-btn">♡</div>
+
+    <div class="property-content">
+        <h3>Beachfront Villa</h3>
+        <p>📍 Lekki, Lagos</p>
+        <div class="property-info">
+            🛏️ 5 Bedrooms • 🛁 5 Bathrooms • 📐 900 sqm
+        </div>
+        <span class="price">₦1.5B</span>
+        <a href="#" class="view-btn">View Property</a>
+    </div>
+</div>
 
 </div>
 
@@ -225,44 +279,41 @@
 
     <div class="agent-grid">
 
-        <div class="agent-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Agent">
+        <img src="kazeem.jpg" alt="Kazeem Muhammed">
 
             <h3>Kazeem Muhammed</h3>
 
-            <span>Senior Property Consultant</span>
+<span>Founder & Senior Property Consultant</span>
 
-            <p>
-                Over 12 years of experience helping clients buy and invest in premium real estate.
-            </p>
+<p>
+Helping clients find luxury homes and premium investment opportunities across Nigeria with professionalism and integrity.
+</p>
 
             <a href="tel:+2347018074775" class="view-btn">Contact</a>
         </div>
 
         <div class="agent-card">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Agent">
+            <img src="elizabeth.jpg" alt="Elizabeth Effiong">
 
             <h3>Elizabeth Effiong</h3>
+<span>Investment Advisor</span>
 
-            <span>Luxury Home Specialist</span>
-
-            <p>
-                Dedicated to finding luxury homes that perfectly match every client's lifestyle.
-            </p>
+<p>
+Helping buyers and investors make smart real estate decisions with confidence.
+</p>
 
             <a href="tel:+2347018074775" class="view-btn">Contact</a>
         </div>
 
         <div class="agent-card">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="Agent">
+            <img src="jeremiah.jpg" alt="Jeremiah Oghene">
 
             <h3>Jeremiah Oghene</h3>
+<span>Luxury Property Specialist</span>
 
-            <span>Investment Advisor</span>
-
-            <p>
-                Helping investors maximize returns through strategic real estate opportunities.
-            </p>
+<p>
+Passionate about connecting clients with premium homes that match their lifestyle and needs.
+</p>
 
             <a href="tel:+2347018074775" class="view-btn">Contact</a>
         </div>
@@ -312,10 +363,21 @@
 
     </div>
     <div class="social-links">
-    <a href="#" aria-label="Instagram">📷</a>
-    <a href="#" aria-label="Facebook">📘</a>
-    <a href="#" aria-label="LinkedIn">💼</a>
-    <a href="https://wa.me/2347018074775" aria-label="WhatsApp">💬</a>
+    <a href="#" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="#" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://wa.me/2347018074775" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </div>
 
     <form class="contact-form">
