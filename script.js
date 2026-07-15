@@ -58,6 +58,13 @@ location:"📍 Victoria Island",
 price:"₦600M",
 image:"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
 description:"Beautiful family residence designed for comfort, offering spacious living areas and excellent investment value."
+},
+{
+title:"Luxury Duplex",
+location:"📍 Banana Island, Lagos",
+price:"₦1.2B",
+image:"https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
+description:"An exceptional 6-bedroom luxury duplex featuring premium finishes, expansive living spaces, modern architecture, and world-class amenities in Banana Island."
 }
 ];
 
